@@ -1,52 +1,44 @@
-@import "fonts"
+@import "_fonts"
 //@import "libs"
-@import "vars"
-*
-	-webkit-box-sizing: border-box
-	-moz-box-sizing: border-box
-	box-sizing: border-box
-	&:before, &:after
-		-webkit-box-sizing: border-box
-		-moz-box-sizing: border-box
-		box-sizing: border-box
+@import "_vars"
+@import "../components/menu/menu.sass"
+@import "base"
+$fa-font-path: "~font-awesome/fonts";
+@import '~font-awesome/scss/font-awesome.scss'
+.grid 
+	display: grid
 
-*::-webkit-input-placeholder
-	color: #666
-	opacity: 1
-
-*:-moz-placeholder
-	color: #666
-	opacity: 1
-
-*::-moz-placeholder
-	color: #666
-	opacity: 1
-
-*:-ms-input-placeholder
-	color: #666
-	opacity: 1
-*:focus
- outline: none 
-
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
-
-html, body
-	height: 100%
-
-body
-	font-size: 16px
-	min-width: 320px
+.main-header
+	min-height: 681px
+	background-size: cover
+	background-position: center
 	position: relative
-	line-height: 1.65
-	//font-family: $default-font
-	overflow-x: hidden
-	opacity: 1
-    
+	&::before
+		content: ''
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0
+		opacity: .73
+		background: linear-gradient(to right, $green,$light-blue)
+	
+.header-top
+	height: 50px
+	padding: 75px 0
+	align-content: center
+	grid-template-columns: repeat(3 , 1fr)
+	position: relative
+
+.head-menu
+	width: 650px
+
+.container
+	max-width: 1200px
+	margin: auto
+	
+ 
+
 
 
 //@import "_media"
