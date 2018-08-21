@@ -2,59 +2,20 @@
 //@import "libs"
 @import "_vars"
 @import "../components/menu/menu.sass"
+@import "../partials/header/header.sass"
+@import "../partials/about/about.sass"
 @import "base"
 $fa-font-path: "~font-awesome/fonts";
 @import '~font-awesome/scss/font-awesome.scss'
+
 .grid 
 	display: grid
 
-.main-header
-	min-height: 681px
-	background-size: cover
-	background-position: center
-	position: relative
-	&::before
-		content: ''
-		position: absolute
-		top: 0
-		bottom: 0
-		right: 0
-		left: 0
-		opacity: .73
-		background: linear-gradient(to right, $green,$light-blue)
-	
-.header-top
-	height: 50px
-	padding: 85px 0
-	align-content: center
-	grid-template-columns: repeat(3 , 1fr)
-	position: relative
-
-.header-center
-	font-family: Roboto-ld
-	font-size: 12pt
-	grid-template-rows: repeat(2 , 1fr)
-	grid-row-gap: 3px
-	letter-spacing: 1px
-	color: $accent
-	align-content: center
-	.phone
-		justify-self: end
-		padding-right: 13px
-	.mail
-		justify-self: end
-			
-	
-
-.head-menu
-	padding-top: 10px
-	width: 650px
-	margin: auto
-	
 
 .container
 	max-width: 1200px
 	margin: auto
+	
 	
  
 
