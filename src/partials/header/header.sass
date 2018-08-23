@@ -1,4 +1,7 @@
 .main-header
+	grid-template-columns:  1fr
+	grid-template-rows: 0.3fr 1fr
+	grid-gap: 50px
 	min-height: 100vh
 	background-size: cover
 	background-position: center
@@ -13,16 +16,20 @@
 		left: 0
 		opacity: .71
 		background: linear-gradient(to right, $green,$light-blue)
+	
 
 .header-content
+	display: inline-block
 	z-index: 2	
 	text-align: center
 	position: relative
 	color: $accent
+	padding: 20px $gutter
+	vertical-align: middle
 	h1
 		font-size: 54pt
 		font-weight: normal
-		font-family: sans-serif
+		font-family: intro-grid sans-serif
 	
 .header-top
 	height: 50px

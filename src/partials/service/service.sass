@@ -1,0 +1,119 @@
+.service-main
+    background-color: #ecf0f1
+    height: 100vh
+.service-top
+    grid-template-columns: repeat(2,1fr)
+    div:nth-child(1)
+        grid-column: 1 / -1
+        text-align: center
+        font-size: 18pt
+        font-family: "Roboto-md"
+        font-stretch: extra-condensed
+        color: $dark
+
+.our-service-items
+    grid-template-columns: 155px 1fr
+    grid-template-rows: 1fr 70px
+    padding: 20px $gutter
+    text-align: left
+    div:nth-child(1)
+        grid-column: 1  / 2
+        margin: 0
+    p
+        margin: 0
+        padding: 10px 
+        font-size: 18pt
+        font-family: "Roboto-md"
+    img
+        width: 150px
+        padding: 10px 
+
+.our-service-items-right
+    justify-items: start
+    align-items: center
+    font-size: 18pt
+    font-weight: bold
+.our-service-items-bottom
+    grid-column: 1  / 3
+    align-items: center
+    font-family: "Roboto-md"
+    color: $grey
+.our-service-items-left
+    align-items: center
+    
+.service-bottom
+    grid-template-columns: repeat(5, 1fr)
+    grid-template-rows: 1fr 1fr 1fr
+    grid-auto-flow: row
+    font-family: "Roboto-md"
+    font-size: 18pt
+    grid-row-gap: 50px 
+    position: relative
+    background-color: #ecf0f1
+    &::after
+        content: ""
+        position: absolute
+        height: 2px
+        top: 70%
+        right: 0
+        bottom: 0
+        left: 0
+        background: $grey
+        transition: .5s 
+    p
+        margin: 0 
+
+    h2
+        grid-column: 1 / -1
+        align-content: center
+        text-align: center
+        font-family: "Roboto-md"
+        font-size: 22pt
+
+    div:nth-child(2)
+        grid-column: 1 / 2
+        grid-row: 2 / 4 
+        align-content: start
+    div:nth-child(3)
+        grid-column: 2 / 3
+        grid-row: 2 / 4 
+        align-content: end
+    div:nth-child(4)
+        grid-column: 4 / 5
+        grid-row: 2 / 4 
+        align-content: end
+    div:nth-child(5)
+        grid-column: 5 / 6
+        grid-row: 2 / 4 
+        align-content: start
+    div:nth-child(6)
+        grid-column: 3 / 4
+        grid-row: 2 / 4 
+        align-content: start
+                
+    .sevice-bottom-items
+        position: relative
+        align-items: center
+        padding: 1px
+        text-align: left
+        &::before
+         content: "●"
+         position: absolute
+         text-align: left
+         color: #e67e22
+         height: 2px
+         top: 88px
+         right: 0
+         bottom: 0
+         font-size: 35px
+         left: 0
+         z-index: 1
+           
+        
+    
+
+        
+
+
+
+        
