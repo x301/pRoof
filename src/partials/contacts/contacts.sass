@@ -1,0 +1,96 @@
+.main-contacts
+    height: 100vh
+.contacts-items
+    grid-template-columns: repeat(2 , 1fr)
+.contact_form
+  h2
+   margin: 0
+   display: inline
+  ul
+   width: 521px
+   list-style-type:none !important
+   list-style-position: outside
+   margin: 0
+   padding: 0
+  li
+   padding: 12px
+   border-bottom: 1 px solid #e8e8e8
+   position: relative
+   &:first-child, &:last-child
+    1px solid $darkgreen
+
+.required_notification
+  color: #d45252
+  margin: 5px 0 0 0
+  display: inline
+  float: left
+
+.contact_form input
+  height: 46px
+  width: 320px
+
+.contact_form textarea
+  height: 192px
+  width: 400px
+  padding: 5px 8px
+
+.contact_form button
+  width: 192px
+  height: 43px
+  font-weight: 700
+  color: white
+  text-decoration: none
+  padding: 5px 5px
+  border-radius: 3px
+  background: rgb(64,199,129);
+  box-shadow: 0 -3px rgb(53,167,110) inset
+  transition: 0.2s
+  &:hover
+   background: rgb(53, 167, 110)
+  &:active
+   background: 0 3px rgb(33,147,90) inset
+
+.contact_form input, .contact_form textarea
+  border: 1px solid #aaa
+  box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset
+  border-radius: 2px
+  padding-right: 30px
+  -moz-transition: width .25s
+  -webkit-transition: width .25s
+  -o-transition: width .25s
+  transition: width .25s
+
+.contact_form input, .contact_form textarea
+ &:focus
+   background: #fff
+   border: 1px solid #555
+   box-shadow: 0 0 3px #aaa
+   width: 430px
+   &:invalid
+    background-image: url("/img/contact-form/invalid.png") no-repeat 98% center !important
+    box-shadow: 0 0 5px #d45252
+    border-color: #b03535
+ &:required
+  background: #fff url("/img/contact-form/red_asterisk.png") no-repeat 98% center 
+  &:valid
+   background: #fff 
+   background-image: url("/img/contact-form/valid.png") no-repeat 98% center !important
+   box-shadow: 0 0 5px #5cd053
+   border-color: #28921f
+    
+   
+.form_hint 
+  background: #d45252
+  border-radius: 3px 3px 3px 3px
+  color: white
+  margin-left: 8px
+  padding: 1px 6px
+  z-index: 999 
+  position: absolute 
+  display: none
+  &:before
+   content: "\25C0"
+   color: #d45252
+   position: absolute
+   top: 1px
+   left: -6px

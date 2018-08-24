@@ -1,0 +1,21 @@
+section.main-contacts
+ div.contacts-items.grid.container
+  div.contacts-left.grid
+   h2 Свяжитесь с нами
+   form.contact_form(action="#" method="post" name="contact_form")
+    ul
+     li
+      span.required_notification * Обязательные поля для заполнения
+     li
+      input(type="text" placeholder="Имя" required)
+     li
+      input(type="email" name="email" placeholder="Email" required )
+      span.form_hint Неверный формат "name@something.com"
+     li
+      textarea(name="message" placeholder="Сообщение" cols="40" rows="6" required)
+     li
+     button.submit(type="submit") Отправить
+      
+
+  div.contacts-right.grid
+  
