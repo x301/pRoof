@@ -1,31 +1,275 @@
-@import "vars"
+@import "vars" 
+@media only screen and (max-width : 1026px)
+    #my-menu
+        display: none !important
+    #head-menu
+        display: none !important
+    .about-left
+        display: none
+    .about
+        div:nth-child(3)
+            grid-row-start: 3
+        div:nth-child(4)
+            grid-row-start: 4
+        div:nth-child(5)
+            grid-row-start: 4
+        div:nth-child(6)
+            grid-row-start: 5
+        div:nth-child(7)
+            grid-row-start: 5
+
+    .about-right
+        grid-column: 1/-1 
+            grid-row-start: 1
+    h2
+        text-align: center
+
+@media only screen and (min-width : 1025px)
+    .header-content
+        padding: 15px
+        h1
+            font-size: 5rem
+    #m-menu
+         display: none !important
+    #mm-my-menu
+        display: none !important
+        
+    
+@media only screen and (max-width : 992px)
+    .about
+        grid-template-columns: minmax(150px,972px)
+        div:nth-child(3)
+            grid-row-start: 3
+        div:nth-child(4)
+            grid-row-start: 4
+        div:nth-child(5)
+            grid-row-start: 5
+        div:nth-child(6)
+            grid-row-start: 6
+        div:nth-child(7)
+            grid-row-start: 7
+
+    .about-right
+        justify-items: center
+        padding: 0 2rem 0 2rem
+    
+    
+        
+@media only screen and (max-width : 767px)
+    .head-menu
+        padding: 20px
+
+    .header-content
+        h1
+            font-size: 2rem
+    
+    .service-top
+        grid-template-columns:  minmax(310px, auto)
+        grid-row-gap: 10px
+        padding-bottom: 1rem 
+        h2
+            font-size: 1.9rem
+
+    .our-service-items
+        grid-auto-rows: minmax(50px,150px)
+        margin-bottom: 15px
+    .contacts-items
+        grid-template-columns: minmax(20rem,700%) 
+        grid-auto-rows: minmax(2rem, auto)
+    .contact_form
+        ul
+            li
+                padding: 1rem  
+    .contact_form input
+        height: 3rem
+    .contact_form textarea
+        height: 9rem
+    
+
+@media only screen and (max-width : 480px)
+    #my-header
+        grid-gap: 10px
+
+    .header-top
+        grid-template-columns: repeat(auto-fill , minmax(150px,300px))
+        div:nth-child(1)
+            justify-self: center
+        div:nth-child(2)
+            justify-self: center
+        
+    .phone
+        font-size: .9rem 
+        padding-top: .5rem
+    .mail
+        font-size: .9rem 
+        padding-top: .5rem
+
+    .header-content
+        padding-top: 5rem
+        h1
+            font-size: 2rem
+            text-align: center
+    
+    .about
+        padding-top: 2rem
+        padding-left: 1rem
+        p
+         font-size: 1.3rem
+         margin: 0
+        div:nth-child(3)
+            font-size: 1.7rem
+        h2
+            padding-bottom: 1rem
+            font-size: 1.5rem
+
+    .about-right
+        grid-row-gap: 1rem
+        p
+            padding-bottom: 1rem 
+
+    .benefits-items
+        padding: .5rem
+
+    .our-service-top
+        h2
+            font-size: 1.5rem
+            text-align: center
+
+    .our-service-items-right
+        p
+            font-size: 1rem
+    
+    .work-bottom
+        grid-template-columns: minmax(150px, 300px)
+        grid-template-rows: 70px repeat(5, 150px)
+        grid-auto-columns: minmax(200px,563px)
+        grid-auto-flow: row
+        font-family: "Roboto-md"
+        font-size: 1.2rem
+        position: relative
+        justify-content: center
+        h2
+            font-size: 1.5rem
+        div:nth-child(2)
+            grid-column: 1/2
+            justify-self: center
+        div:nth-child(3)
+            grid-column: 1/2
+            justify-self: center
+            grid-row-start: 3
+        div:nth-child(4)
+            grid-column: 1/2
+            justify-self: center
+            grid-row: 4    
+        div:nth-child(5)
+            grid-column: 1/2
+            justify-self: center
+            grid-row-start: 5
+        div:nth-child(6)
+            grid-column: 1/2
+            justify-self: center
+            grid-row-start: 6
+        
+                
+    .work-bottom-items
+        position: relative
+        align-items: center
+        background-color: white
+        transition: .1s 
+        &:nth-child(odd)
+             text-align: left
+             padding-left: 1.3rem
+             &::before
+              content: "●"
+              position: absolute
+              text-align: center
+              text-indent: -.4rem
+              left: 1% !important
+              line-height: 600%
+              font-size: 25px
+              color: #e67e22
+              width: 2px
+              height: 100%
+              background: $grey
+              
+        
+
+        &:nth-child(even)
+             text-align: left !important
+             padding-left: 1.3rem
+             &::before
+              content: "●"
+              position: absolute
+              text-align: center
+              text-indent: -.4rem
+              left: 1% !important
+              line-height: 600%
+              font-size: 25px
+              color: #e67e22
+              width: 2px
+              height: 100%
+              background: $grey
+
+@media only screen and (max-width : 375px)
+    .header-content
+        h1
+            font-size: 1.5rem
+        p
+            font-size: 1rem
+    
+    .about
+        padding-left: 1rem 
+        h2
+            font-size: 1.9rem
+            
+@media only screen and (max-width : 375px)
+    .benefits-items
+        grid-template-columns: 1fr 
+        img
+         display: none
+    .our-service-top
+        h2
+         font-size: 1.5rem
+    .our-service-items
+         grid-template-columns: 310px
+         grid-auto-rows: 90px
+         div:nth-child(1)
+            grid-column: 1  / 2
+            margin: 0
+            
+         div:nth-child(2)
+             grid-column: 1  / 2
+             margin: 0
+    .our-service-items-right 
+        p
+            font-size: 1.3rem
+            padding: .7rem
+    .our-service-items-left
+        img
+            max-height: 70px
+        
 
 
-/*==========  Desktop First  ==========*/
 
-// ≥1200px
-+media-breakpoint-down(lg)
-
-// ≥992px
-+media-breakpoint-down(md)
-
-// ≥768px
-+media-breakpoint-down(sm)
-
-// ≥576px
-+media-breakpoint-down(xs)
+    
 
 
-/*==========  Mobile First  ==========*/
 
-// ≤576px
-+media-breakpoint-up(sm)
+              
+    
 
-// ≤768px
-+media-breakpoint-up(md)
+            
 
-// ≤992px
-+media-breakpoint-up(lg)
+        
+       
+    
+    
 
-// ≤1200px
-+media-breakpoint-up(xl)
+
+
+
+
+	  
+    
+
+

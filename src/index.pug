@@ -5,11 +5,23 @@ html
         meta(name='viewport', content="initial-scale=1.0, width=device-width")
         title   
     body
-    include partials/header/header
-    include partials/about/about
-    include partials/service/service
-    include partials/work/work
-    include partials/contacts/contacts
+        section#my-page
+             div#m-menu
+                 a(href="#my-menu") 
+                     span.hamburger.hamburger--collapse
+                        span.hamburger-box
+                          span.hamburger-inner
+             include partials/header/header
+             section#my-content
+                 include partials/about/about
+                 include partials/service/service
+                 include partials/work/work
+                 include partials/contacts/contacts
+             section#my-footer
+                include partials/footer/footer
+
+
+     
      
         
         

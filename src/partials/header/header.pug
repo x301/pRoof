@@ -1,14 +1,19 @@
-header.main-header.grid(style="background-image: url(src/img/header-2.jpg)")
- div.header-top.container.grid
+header#my-header.grid(style='background-image: url(src/img/header-1.jpg)')
+ div.header-top.grid
   div.header-left
-   img(src="src/img/Logo-3.png")
+   img(src=require('../../img/Logo-1.png') alt="Логотип")
   div.header-center.grid
-   i.phone.fa.fa-phone  +7 (495) 888 88 00
-   i.mail.fa.fa-envelope      example@email.com
-  nav.head-menu
-   include ../../components/menu/menu
- div.header-content.grid
+   i.phone.fa.fa-phone 
+     a.phone(href="tel:+7 (495) 142-53-05") +7 (495) 142-53-05  
+   i.mphone.fa.fa-mobile    
+     a.mphone(href="tel:+7 (977) 613-52-02") +7 (977) 613-52-02  
+   i.mail.fa.fa-envelope      info@moskrovservice.ru
+ div#head-menu.grid
+  include ../../components/menu/menu
+ div.header-content.grid.content
   h1 Лучшие Решения Для Вас
+ 
+     
   
    
 
