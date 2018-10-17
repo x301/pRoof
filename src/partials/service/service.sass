@@ -1,6 +1,7 @@
 .service-main
     min-height: 100vh
     position: relative
+    background: #ecf0f1
 .service-top
     grid-template-columns: repeat(2,1fr)
     grid-template-rows: 70px 300px 300px
@@ -8,6 +9,8 @@
     align-content: center
     padding: .5rem
     padding-top: 1rem
+    position: relative
+    display: inline-block
     div:nth-child(1)
         grid-column: 1 / -1
         text-align: center
@@ -20,7 +23,7 @@
         
 .our-service-items
     grid-template-columns: minmax(100px,300px) minmax(150px,300px)
-    grid-auto-rows: minmax(50px,auto)
+    grid-template-rows: minmax(50px,185px)
     padding: 20px $gutter
     text-align: left 
     display: inline-block

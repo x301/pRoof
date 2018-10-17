@@ -3,9 +3,11 @@
 	grid-template-rows: 50px 50px
 	grid-gap: 50px
 	min-height: 100vh
+	grid-area: header
 	position: relative 
 	background-size: cover
     background-position: center
+	background-image: url('../img/header-1.jpg')
 	&::before
 		content: ''
 		position: absolute
@@ -59,20 +61,20 @@
 	align-content: center
 
 .phone
-	padding: .1rem
+	padding: .2rem
 	font-size: 1.1rem 
 	padding-right: .7em
-	font-family: "Roboto-ld" !important
+	font-family: "Roboto-ld" 
 	color: white
 	text-decoration: none
 	&:before
 		  font-family: "FontAwesome"
 		  font-size: 1.1rem 
 .mphone
-	padding: .1rem
+	padding: .2rem
 	font-size: 1.1rem 
 	padding-right: .7em
-	font-family: "Roboto-ld" !important
+	font-family: "Roboto-ld" 
 	text-indent: 7px
 	color: white
 	text-decoration: none
@@ -81,10 +83,9 @@
 		  font-size: 1.3rem 
 
 .mail
-	padding: .1rem
+	padding: .2rem
 	font-size: 1.1rem 
-	white-space: nowrap
-	font-family: "Roboto-ld" !important
+	font-family: "Roboto-ld" 
 	&:before
 		font-family: "FontAwesome" 
 		font-size: 1.1rem 
@@ -110,13 +111,12 @@
 .mm-menu_listview-justify .mm-panels > .mm-panel .mm-listview, .mm-panels > .mm-panel_listview-justify .mm-listview
 	display: grid
 	grid-template-columns: 1fr
-	grid-template-rows: repeat(4, 1fr) 
-	height: 100%
+	grid-template-rows: repeat(5, 1fr) 
+	height: 50%
 	.mm-listitem
 		display: grid
 		text-align: left
 		align-items: center
-		height: 100%
 		font-size: 1rem
 		font-family: "Roboto-md"
 		color: $dark
@@ -125,13 +125,15 @@
 			font-family: "Roboto-md"
 			font-size: 1.5rem
 	.mm-listitem:nth-child(1)
-			background: #dfd
+			
 	.mm-listitem:nth-child(2)
-			background: #ecf0f1
+			
 	.mm-listitem:nth-child(3)
-			background: #ffd
+			
 	.mm-listitem:nth-child(4)
-			background: #ecf0f1
+			
+	.mm-listitem:nth-child(5)
+			
 			 
 
 	

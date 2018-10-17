@@ -7,6 +7,7 @@ import "../libs/fullpage/fullpage.css";
 import "../libs/fullpage/fullpage.js";
 import "../libs/jQuery.mmenu-master/dist/addons/pagescroll/jquery.mmenu.pagescroll.js";
 import "../libs/jQuery.mmenu-master/dist/extensions/positioning/jquery.mmenu.positioning.css";
+import "../libs/jQuery.mmenu-master/dist/extensions/fullscreen/jquery.mmenu.fullscreen.css";
 
 $(function() {
   $("#my-menu").mmenu(
@@ -17,10 +18,16 @@ $(function() {
         "listview-justify",
         "border-full",
         "swadow-page",
-        "pagedim-black"
+        "pagedim-black",
+        "fullscreen",
+        "position-front"
       ],
+      onClick: {
+        preventDefault: false
+      },
+
       navbar: {
-        title: '<img src ="src/img/Logo-3.png">'
+        title: "<img src =../../img/Logo-1.png>"
       },
       pageScroll: true
     },
@@ -32,14 +39,7 @@ $(function() {
       clone: true
     }
   );
-  $(".mh-head.mm-sticky").mhead({
-    scroll: {
-      hide: 200
-    }
-  });
-  $(".mh-head:not(.mm-sticky)").mhead({
-    scroll: false
-  });
+
   $("body").on("click", 'a[href^="#/"]', function() {
     alert("Thank you for clicking, but that's a demo link.");
     return false;
@@ -72,3 +72,12 @@ function mySticky() {
     navbar.classList.remove("sticky");
   }
 }
+
+$(window).on("load", function() {
+  $(".loaderArea")
+    .find("sk-fading-circle")
+    .fadeOut()
+    .end()
+    .delay(400)
+    .fadeOut("slow");
+});

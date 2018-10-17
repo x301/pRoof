@@ -8,7 +8,6 @@ module.exports = function(paths) {
           test: /\.sass$/,
           include: paths,
           use: ExtractTextPlugin.extract({
-            publicPath: "./",
             fallback: "style-loader",
             use: ["css-loader", "resolve-url-loader", "sass-loader"]
           })

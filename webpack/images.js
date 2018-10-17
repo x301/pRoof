@@ -7,7 +7,8 @@ module.exports = function() {
           loader: "file-loader",
           options: {
             name: "img/[name].[ext]",
-            outputPath: "./"
+            outputPath: "././",
+            useRelativePaths: true
           }
         }
       ]

@@ -51,7 +51,7 @@
 
     .about-right
         justify-items: center
-        padding: 0 2rem 0 2rem
+        padding: 0 1.3rem 0 1.3rem
     
     
         
@@ -65,21 +65,24 @@
     
     .service-top
         grid-template-columns:  minmax(310px, auto)
+        grid-template-rows: 80px repeat(4,190px)
         grid-row-gap: 10px
         padding-bottom: 1rem 
         h2
             font-size: 1.9rem
 
     .our-service-items
-        grid-auto-rows: minmax(50px,150px)
         margin-bottom: 15px
     .contacts-items
         grid-template-columns: minmax(20rem,700%) 
-        grid-auto-rows: minmax(2rem, auto)
+        grid-template-rows: minmax(2rem, auto)
+        div:nth-child(1)
+            grid-row-start: 2
+
     .contact_form
         ul
             li
-                padding: 1rem  
+                padding: .4rem  
     .contact_form input
         height: 3rem
     .contact_form textarea
@@ -99,15 +102,15 @@
         
     .phone
         font-size: .9rem 
-        padding-top: .5rem
     .mail
-        font-size: .9rem 
-        padding-top: .5rem
+        font-size: .9rem   
+    .mphone
+        font-size: .9rem   
 
     .header-content
         padding-top: 5rem
         h1
-            font-size: 2rem
+            font-size: 2.5rem
             text-align: center
     
     .about
@@ -120,7 +123,7 @@
             font-size: 1.7rem
         h2
             padding-bottom: 1rem
-            font-size: 1.5rem
+            font-size: 1.8rem
 
     .about-right
         grid-row-gap: 1rem
@@ -210,6 +213,9 @@
               height: 100%
               background: $grey
 
+    .main-contacts
+        font-size: 1.3rem
+
 @media only screen and (max-width : 375px)
     .header-content
         h1
@@ -227,12 +233,18 @@
         grid-template-columns: 1fr 
         img
          display: none
+    .service-top
+        grid-gap: 10px
+        grid-template-rows: 80px repeat(4,250px)
     .our-service-top
         h2
          font-size: 1.5rem
     .our-service-items
-         grid-template-columns: 310px
-         grid-auto-rows: 90px
+         grid-template-columns: 300px
+         grid-template-rows:  repeat(auto-fit,minmax(70px,150px))
+         grid-auto-rows: 100px
+         p
+             padding-left: 0
          div:nth-child(1)
             grid-column: 1  / 2
             margin: 0
@@ -243,10 +255,20 @@
     .our-service-items-right 
         p
             font-size: 1.3rem
-            padding: .7rem
+            padding-top: .7rem
     .our-service-items-left
         img
-            max-height: 70px
+            height: 30%
+            width: 20%
+
+    .contacts-left
+        h2
+            font-size: 1.5rem
+    .contacts-right
+        span,p
+            font-size: 1.5rem
+
+    
         
 
 

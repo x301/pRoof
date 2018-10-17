@@ -1,8 +1,10 @@
 #my-footer
-    min-height: 155px
+    height: 20vh
     background-size: cover
     background-position: center
-    position: relative 
+    grid-area: footer
+    position: relative
+    grid-row: row3 / row4
     &::before
         content: ''
         position: absolute
@@ -12,4 +14,5 @@
         left: 0
         opacity: .71
         background: linear-gradient(to left, $green,$light-blue)
+    
     

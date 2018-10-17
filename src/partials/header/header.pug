@@ -1,4 +1,4 @@
-header#my-header.grid(style='background-image: url(src/img/header-1.jpg)')
+header#my-header.grid
  div.header-top.grid
   div.header-left
    img(src=require('../../img/Logo-1.png') alt="Логотип")
@@ -7,7 +7,8 @@ header#my-header.grid(style='background-image: url(src/img/header-1.jpg)')
      a.phone(href="tel:+7 (495) 142-53-05") +7 (495) 142-53-05  
    i.mphone.fa.fa-mobile    
      a.mphone(href="tel:+7 (977) 613-52-02") +7 (977) 613-52-02  
-   i.mail.fa.fa-envelope      info@moskrovservice.ru
+   i.mail.fa.fa-envelope      
+     a.mail info@moskrovservice.ru
  div#head-menu.grid
   include ../../components/menu/menu
  div.header-content.grid.content

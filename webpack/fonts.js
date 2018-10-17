@@ -7,7 +7,7 @@ module.exports = function() {
           loader: "file-loader",
           options: {
             name: "fonts/[name].[ext]",
-            outputPath: "./"
+            outputPath: "././"
           }
         }
       ]

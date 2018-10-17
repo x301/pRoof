@@ -1,20 +1,20 @@
 .main-contacts
-    height: 100vh
+    min-height: 100vh
     font-family: "Roboto-md"
     font-size: 1.5rem
     margin-top: 20px
-    position: relative
     background-color: #ecf0f1  
     align-content: start
+    padding-left: .5rem
 .contacts-items
-   position: relative
-   padding-top: 5rem 
-   grid-template-columns: minmax(20rem,70%) minmax(20rem,30%) 
+   padding-top: 2rem 
+   grid-template-columns: minmax(20rem,70%) minmax(20rem,30%)         
    h2
      margin: 0
-     padding: $gutter
-     display: inline
-     text-align: left
+     padding: .5rem
+     text-align: center
+     font-size: 1.9rem
+     font-family: "Roboto-md"
  
 .contact_form
   ul
@@ -38,9 +38,10 @@
 .contact_form input
   height: 3.5rem
   width: 85%
+  padding: 5px 8px
 
 .contact_form textarea
-  height: 17rem
+  height: 30vh
   width: 95%
   padding: 5px 8px
 
@@ -104,15 +105,16 @@
   align-content: start
   a
     display: block
-    pading-top: 1rem
     padding-top: 1rem
     color: #848484
     text-decoration: none
   ul
+    padding: 0
     li
       position: relative
       span:nth-child(1)
         color: #e67e22
+        font-size: 1.5rem
 hr 
   border: 0
   height: 0
